@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Enum uuid="7aa103b6-e1fd-40ff-80f2-e2efa5e872a5">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.АлгоритмыРасчетаНачислений" category="Ref">
+				<xr:TypeId>fb00b185-4c46-4c8d-ae2a-41981629da48</xr:TypeId>
+				<xr:ValueId>8315ba2c-9ec1-4f99-a37d-9c90cc40cb01</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.АлгоритмыРасчетаНачислений" category="Manager">
+				<xr:TypeId>f8962aa6-83e4-4961-ac8d-b61d52f0f855</xr:TypeId>
+				<xr:ValueId>8f613752-d3b6-4d45-b196-54b099561985</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.АлгоритмыРасчетаНачислений" category="List">
+				<xr:TypeId>b7331648-925f-4bc8-8638-7cdb7b4fafa2</xr:TypeId>
+				<xr:ValueId>ac6c5ed1-c772-4b36-93f0-654cafdd1505</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>АлгоритмыРасчетаНачислений</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритмы расчета начислений</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment>!! только для возможноти создавать новые виды расчета</Comment>
+			<UseStandardCommands>false</UseStandardCommands>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="adf059dd-c988-4227-b282-eb331ce108f6">
+				<Properties>
+					<Name>ПропорциональноОтработанномуВремени</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пропорционально отработанному времени</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="7e54b79b-1d9e-4cac-acd4-cf43b3ec24c4">
+				<Properties>
+					<Name>ПроцентОтБазы</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Процент от базы</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="7fff34f4-a2fb-4fd2-9e75-773163e0f6be">
+				<Properties>
+					<Name>ЗаОтработанноеВремя</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>За отработанное время</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="f8f63ddd-969a-4904-9099-da0a7e0bd6d6">
+				<Properties>
+					<Name>ФиксированнаяСумма</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фиксированная сумма</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="679f06c3-4b47-40f3-9b93-4323f50d4a3c">
+				<Properties>
+					<Name>ПоСреднему</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По среднему</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

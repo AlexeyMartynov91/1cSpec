@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ChartOfAccountsPredefinedItems" version="2.18">
+	<Item id="78e892ed-f9b9-4d80-9a2b-ef87b8f1b4b5">
+		<Name>Покупатели</Name>
+		<Code>Покупател</Code>
+		<Description>Покупатели</Description>
+		<AccountType>ActivePassive</AccountType>
+		<OffBalance>false</OffBalance>
+		<Order/>
+		<AccountingFlags>
+			<Flag ref="ChartOfAccounts.ПланСчетовБУ.AccountingFlag.Количественный">false</Flag>
+		</AccountingFlags>
+		<ExtDimensionTypes/>
+	</Item>
+	<Item id="c5735ff2-d4d5-4848-87b7-82c5e7a26edd">
+		<Name>Поставщики</Name>
+		<Code>Поставщик</Code>
+		<Description>Поставщики</Description>
+		<AccountType>ActivePassive</AccountType>
+		<OffBalance>false</OffBalance>
+		<Order/>
+		<AccountingFlags>
+			<Flag ref="ChartOfAccounts.ПланСчетовБУ.AccountingFlag.Количественный">false</Flag>
+		</AccountingFlags>
+		<ExtDimensionTypes/>
+	</Item>
+	<Item id="8df937f8-cae9-4780-ad9c-104a74b27e45">
+		<Name>ПрибылиИУбытки</Name>
+		<Code>ПрибУбыт</Code>
+		<Description>Прибыли и убытки</Description>
+		<AccountType>Passive</AccountType>
+		<OffBalance>false</OffBalance>
+		<Order/>
+		<AccountingFlags>
+			<Flag ref="ChartOfAccounts.ПланСчетовБУ.AccountingFlag.Количественный">false</Flag>
+		</AccountingFlags>
+		<ExtDimensionTypes/>
+	</Item>
+	<Item id="72b3b2d6-af96-4036-bb4f-10a4211dddde">
+		<Name>Товары</Name>
+		<Code>Товары</Code>
+		<Description>Товары</Description>
+		<AccountType>Active</AccountType>
+		<OffBalance>false</OffBalance>
+		<Order/>
+		<AccountingFlags>
+			<Flag ref="ChartOfAccounts.ПланСчетовБУ.AccountingFlag.Количественный">true</Flag>
+		</AccountingFlags>
+		<ExtDimensionTypes>
+			<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконто.Товары">
+				<Turnover>false</Turnover>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts.ПланСчетовБУ.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+				</AccountingFlags>
+			</ExtDimensionType>
+			<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконто.СрокиГодности">
+				<Turnover>false</Turnover>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts.ПланСчетовБУ.ExtDimensionAccountingFlag.Суммовой">false</Flag>
+				</AccountingFlags>
+			</ExtDimensionType>
+		</ExtDimensionTypes>
+	</Item>
+</PredefinedData>

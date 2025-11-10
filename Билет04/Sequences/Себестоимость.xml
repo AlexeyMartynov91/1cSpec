@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Sequence uuid="f92f7163-f1b3-4d40-afef-4eafe7f2ce26">
+		<InternalInfo>
+			<xr:GeneratedType name="SequenceRecord.Себестоимость" category="Record">
+				<xr:TypeId>428c2789-6038-4796-9d6d-ade244cea50e</xr:TypeId>
+				<xr:ValueId>4b35e16e-0bff-4b8b-bc8b-18dddddc3b16</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="SequenceManager.Себестоимость" category="Manager">
+				<xr:TypeId>49924a18-cf49-47c7-a1af-821dd2d71b85</xr:TypeId>
+				<xr:ValueId>61177909-725a-408d-b2f8-dd8bd194b4fc</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="SequenceRecordSet.Себестоимость" category="RecordSet">
+				<xr:TypeId>ad08be0e-48f7-4bde-8be1-1df20f05753f</xr:TypeId>
+				<xr:ValueId>b770cde3-2bb4-4fc8-9212-6dfb601bb736</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>Себестоимость</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Себестоимость</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<MoveBoundaryOnPosting>Move</MoveBoundaryOnPosting>
+			<Documents>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.РасходнаяНакладная</xr:Item>
+			</Documents>
+			<RegisterRecords>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ОстаткиНоменклатуры</xr:Item>
+			</RegisterRecords>
+			<DataLockControlMode>Managed</DataLockControlMode>
+		</Properties>
+		<ChildObjects/>
+	</Sequence>
+</MetaDataObject>

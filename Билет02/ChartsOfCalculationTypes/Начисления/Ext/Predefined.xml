@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CalculationTypePredefinedItems" version="2.18">
+	<Item id="867d051d-44f5-46c5-860a-1bce557169f2">
+		<Name>Оклад</Name>
+		<Code>Оклад</Code>
+		<Description>Оклад</Description>
+		<ActionPeriodIsBase>false</ActionPeriodIsBase>
+	</Item>
+	<Item id="557c90b5-57c4-457e-910c-0687035a4fc3">
+		<Name>Премия</Name>
+		<Code>Премия</Code>
+		<Description>Премия</Description>
+		<ActionPeriodIsBase>true</ActionPeriodIsBase>
+		<Base>
+			<CalculationType>ChartOfCalculationTypes.Начисления.Оклад</CalculationType>
+		</Base>
+		<Displaced>
+			<CalculationType>ChartOfCalculationTypes.Начисления.ФиксированнаяСумма</CalculationType>
+		</Displaced>
+	</Item>
+	<Item id="64b27509-f402-4b6c-ad20-e041aa516ee3">
+		<Name>ФиксированнаяСумма</Name>
+		<Code>ФиксСумма</Code>
+		<Description>Фиксированная сумма</Description>
+		<ActionPeriodIsBase>false</ActionPeriodIsBase>
+	</Item>
+</PredefinedData>

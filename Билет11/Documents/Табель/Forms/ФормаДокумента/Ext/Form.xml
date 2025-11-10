@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Подразделение" id="7">
+			<DataPath>Объект.Подразделение</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПодразделениеКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<Table name="СписокСотрудников" id="10">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.СписокСотрудников</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СписокСотрудниковКонтекстноеМеню" id="11"/>
+			<AutoCommandBar name="СписокСотрудниковКоманднаяПанель" id="12"/>
+			<ExtendedTooltip name="СписокСотрудниковРасширеннаяПодсказка" id="13"/>
+			<SearchStringAddition name="СписокСотрудниковСтрокаПоиска" id="14">
+				<AdditionSource>
+					<Item>СписокСотрудников</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСотрудниковСтрокаПоискаКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="СписокСотрудниковСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСотрудниковСостояниеПросмотра" id="17">
+				<AdditionSource>
+					<Item>СписокСотрудников</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСотрудниковСостояниеПросмотраКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="СписокСотрудниковСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокСотрудниковУправлениеПоиском" id="20">
+				<AdditionSource>
+					<Item>СписокСотрудников</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСотрудниковУправлениеПоискомКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="СписокСотрудниковУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="СписокСотрудниковНомерСтроки" id="23">
+					<DataPath>Объект.СписокСотрудников.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСотрудниковНомерСтрокиКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="СписокСотрудниковНомерСтрокиРасширеннаяПодсказка" id="25"/>
+				</LabelField>
+				<InputField name="СписокСотрудниковСотрудник" id="26">
+					<DataPath>Объект.СписокСотрудников.Сотрудник</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСотрудниковСотрудникКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="СписокСотрудниковСотрудникРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="СписокСотрудниковДень1" id="29">
+					<DataPath>Объект.СписокСотрудников.День1</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСотрудниковДень1КонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="СписокСотрудниковДень1РасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="СписокСотрудниковДень2" id="32">
+					<DataPath>Объект.СписокСотрудников.День2</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСотрудниковДень2КонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="СписокСотрудниковДень2РасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="СписокСотрудниковДень3" id="35">
+					<DataPath>Объект.СписокСотрудников.День3</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСотрудниковДень3КонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="СписокСотрудниковДень3РасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="СписокСотрудниковДень4" id="38">
+					<DataPath>Объект.СписокСотрудников.День4</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСотрудниковДень4КонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="СписокСотрудниковДень4РасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="СписокСотрудниковДень5" id="41">
+					<DataPath>Объект.СписокСотрудников.День5</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСотрудниковДень5КонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="СписокСотрудниковДень5РасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="СписокСотрудниковДень6" id="44">
+					<DataPath>Объект.СписокСотрудников.День6</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСотрудниковДень6КонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="СписокСотрудниковДень6РасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<InputField name="СписокСотрудниковДень7" id="47">
+					<DataPath>Объект.СписокСотрудников.День7</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСотрудниковДень7КонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="СписокСотрудниковДень7РасширеннаяПодсказка" id="49"/>
+				</InputField>
+				<InputField name="СписокСотрудниковДень8" id="50">
+					<DataPath>Объект.СписокСотрудников.День8</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСотрудниковДень8КонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="СписокСотрудниковДень8РасширеннаяПодсказка" id="52"/>
+				</InputField>
+				<InputField name="СписокСотрудниковДень9" id="53">
+					<DataPath>Объект.СписокСотрудников.День9</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСотрудниковДень9КонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="СписокСотрудниковДень9РасширеннаяПодсказка" id="55"/>
+				</InputField>
+				<InputField name="СписокСотрудниковДень10" id="56">
+					<DataPath>Объект.СписокСотрудников.День10</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСотрудниковДень10КонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="СписокСотрудниковДень10РасширеннаяПодсказка" id="58"/>
+				</InputField>
+				<InputField name="СписокСотрудниковДень11" id="59">
+					<DataPath>Объект.СписокСотрудников.День11</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСотрудниковДень11КонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="СписокСотрудниковДень11РасширеннаяПодсказка" id="61"/>
+				</InputField>
+				<InputField name="СписокСотрудниковДень12" id="62">
+					<DataPath>Объект.СписокСотрудников.День12</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСотрудниковДень12КонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="СписокСотрудниковДень12РасширеннаяПодсказка" id="64"/>
+				</InputField>
+				<InputField name="СписокСотрудниковДень13" id="65">
+					<DataPath>Объект.СписокСотрудников.День13</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСотрудниковДень13КонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="СписокСотрудниковДень13РасширеннаяПодсказка" id="67"/>
+				</InputField>
+				<InputField name="СписокСотрудниковДень14" id="68">
+					<DataPath>Объект.СписокСотрудников.День14</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСотрудниковДень14КонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="СписокСотрудниковДень14РасширеннаяПодсказка" id="70"/>
+				</InputField>
+				<InputField name="СписокСотрудниковДень15" id="71">
+					<DataPath>Объект.СписокСотрудников.День15</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСотрудниковДень15КонтекстноеМеню" id="72"/>
+					<ExtendedTooltip name="СписокСотрудниковДень15РасширеннаяПодсказка" id="73"/>
+				</InputField>
+				<InputField name="СписокСотрудниковДень16" id="74">
+					<DataPath>Объект.СписокСотрудников.День16</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСотрудниковДень16КонтекстноеМеню" id="75"/>
+					<ExtendedTooltip name="СписокСотрудниковДень16РасширеннаяПодсказка" id="76"/>
+				</InputField>
+				<InputField name="СписокСотрудниковДень17" id="77">
+					<DataPath>Объект.СписокСотрудников.День17</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСотрудниковДень17КонтекстноеМеню" id="78"/>
+					<ExtendedTooltip name="СписокСотрудниковДень17РасширеннаяПодсказка" id="79"/>
+				</InputField>
+				<InputField name="СписокСотрудниковДень18" id="80">
+					<DataPath>Объект.СписокСотрудников.День18</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСотрудниковДень18КонтекстноеМеню" id="81"/>
+					<ExtendedTooltip name="СписокСотрудниковДень18РасширеннаяПодсказка" id="82"/>
+				</InputField>
+				<InputField name="СписокСотрудниковДень19" id="83">
+					<DataPath>Объект.СписокСотрудников.День19</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСотрудниковДень19КонтекстноеМеню" id="84"/>
+					<ExtendedTooltip name="СписокСотрудниковДень19РасширеннаяПодсказка" id="85"/>
+				</InputField>
+				<InputField name="СписокСотрудниковДень20" id="86">
+					<DataPath>Объект.СписокСотрудников.День20</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСотрудниковДень20КонтекстноеМеню" id="87"/>
+					<ExtendedTooltip name="СписокСотрудниковДень20РасширеннаяПодсказка" id="88"/>
+				</InputField>
+				<InputField name="СписокСотрудниковДень21" id="89">
+					<DataPath>Объект.СписокСотрудников.День21</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСотрудниковДень21КонтекстноеМеню" id="90"/>
+					<ExtendedTooltip name="СписокСотрудниковДень21РасширеннаяПодсказка" id="91"/>
+				</InputField>
+				<InputField name="СписокСотрудниковДень22" id="92">
+					<DataPath>Объект.СписокСотрудников.День22</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСотрудниковДень22КонтекстноеМеню" id="93"/>
+					<ExtendedTooltip name="СписокСотрудниковДень22РасширеннаяПодсказка" id="94"/>
+				</InputField>
+				<InputField name="СписокСотрудниковДень23" id="95">
+					<DataPath>Объект.СписокСотрудников.День23</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСотрудниковДень23КонтекстноеМеню" id="96"/>
+					<ExtendedTooltip name="СписокСотрудниковДень23РасширеннаяПодсказка" id="97"/>
+				</InputField>
+				<InputField name="СписокСотрудниковДень24" id="98">
+					<DataPath>Объект.СписокСотрудников.День24</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСотрудниковДень24КонтекстноеМеню" id="99"/>
+					<ExtendedTooltip name="СписокСотрудниковДень24РасширеннаяПодсказка" id="100"/>
+				</InputField>
+				<InputField name="СписокСотрудниковДень25" id="101">
+					<DataPath>Объект.СписокСотрудников.День25</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСотрудниковДень25КонтекстноеМеню" id="102"/>
+					<ExtendedTooltip name="СписокСотрудниковДень25РасширеннаяПодсказка" id="103"/>
+				</InputField>
+				<InputField name="СписокСотрудниковДень26" id="104">
+					<DataPath>Объект.СписокСотрудников.День26</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСотрудниковДень26КонтекстноеМеню" id="105"/>
+					<ExtendedTooltip name="СписокСотрудниковДень26РасширеннаяПодсказка" id="106"/>
+				</InputField>
+				<InputField name="СписокСотрудниковДень27" id="107">
+					<DataPath>Объект.СписокСотрудников.День27</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСотрудниковДень27КонтекстноеМеню" id="108"/>
+					<ExtendedTooltip name="СписокСотрудниковДень27РасширеннаяПодсказка" id="109"/>
+				</InputField>
+				<InputField name="СписокСотрудниковДень28" id="110">
+					<DataPath>Объект.СписокСотрудников.День28</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСотрудниковДень28КонтекстноеМеню" id="111"/>
+					<ExtendedTooltip name="СписокСотрудниковДень28РасширеннаяПодсказка" id="112"/>
+				</InputField>
+				<InputField name="СписокСотрудниковДень29" id="113">
+					<DataPath>Объект.СписокСотрудников.День29</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСотрудниковДень29КонтекстноеМеню" id="114"/>
+					<ExtendedTooltip name="СписокСотрудниковДень29РасширеннаяПодсказка" id="115"/>
+				</InputField>
+				<InputField name="СписокСотрудниковДень30" id="116">
+					<DataPath>Объект.СписокСотрудников.День30</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСотрудниковДень30КонтекстноеМеню" id="117"/>
+					<ExtendedTooltip name="СписокСотрудниковДень30РасширеннаяПодсказка" id="118"/>
+				</InputField>
+				<InputField name="СписокСотрудниковДень31" id="119">
+					<DataPath>Объект.СписокСотрудников.День31</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСотрудниковДень31КонтекстноеМеню" id="120"/>
+					<ExtendedTooltip name="СписокСотрудниковДень31РасширеннаяПодсказка" id="121"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.Табель</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>AccumulationRegister.ДанныеТабеля.StandardCommand.OpenByRecorder</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

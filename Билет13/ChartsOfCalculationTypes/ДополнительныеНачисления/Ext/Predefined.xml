@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CalculationTypePredefinedItems" version="2.18">
+	<Item id="1b8e9586-f03c-4eb6-bebe-fe6f43d9a161">
+		<Name>Надбавка</Name>
+		<Code>2</Code>
+		<Description>Надбавка</Description>
+		<ActionPeriodIsBase>false</ActionPeriodIsBase>
+	</Item>
+	<Item id="33f54a51-398f-4292-b498-980f3faa0ba1">
+		<Name>ПремияБригадиру</Name>
+		<Code>1</Code>
+		<Description>Премия бригадиру</Description>
+		<ActionPeriodIsBase>false</ActionPeriodIsBase>
+		<Base>
+			<CalculationType>ChartOfCalculationTypes.ДополнительныеНачисления.Надбавка</CalculationType>
+		</Base>
+	</Item>
+</PredefinedData>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.18">
+	<Item id="b4c3c925-b7a3-40d2-93ac-1d382eaca526">
+		<Name>Оптовая</Name>
+		<Code>000000001</Code>
+		<Description>Оптовая</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="1a043ae8-278d-4be4-91eb-36b4be0be098">
+		<Name>Розничная</Name>
+		<Code>000000002</Code>
+		<Description>Розничная</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

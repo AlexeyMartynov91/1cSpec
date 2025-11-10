@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.18">
+	<Item id="6c5e4550-e211-48fd-bdca-8b77cac6244c">
+		<Name>Васина</Name>
+		<Code>000000001</Code>
+		<Description>Васина</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="be429c50-917b-467a-b312-175a4d7783c4">
+		<Name>Галкин</Name>
+		<Code>000000005</Code>
+		<Description>Галкин</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e9679c37-d66f-4e93-a320-e6a086253118">
+		<Name>Жупиков</Name>
+		<Code>000000012</Code>
+		<Description>Жупиков</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="478d8a7e-aa4b-41e3-a83a-cbbcaef6e72f">
+		<Name>Залкинд</Name>
+		<Code>000000009</Code>
+		<Description>Залкинд</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="7f1fb2b6-25a4-423c-9a44-c594d4624b9b">
+		<Name>Кротов</Name>
+		<Code>000000003</Code>
+		<Description>Кротов</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="e377931e-2561-44e6-a635-b73727fc1cb9">
+		<Name>Лоханкина</Name>
+		<Code>000000010</Code>
+		<Description>Лоханкина</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="2a608873-43a1-4921-996f-f3daedd70dde">
+		<Name>Малкин</Name>
+		<Code>000000007</Code>
+		<Description>Малкин</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="dccdfc23-f0c1-432f-a7f5-f10e2eb21f57">
+		<Name>Мишина</Name>
+		<Code>000000002</Code>
+		<Description>Мишина</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="bfcb4000-4317-453c-a377-d5ee1daf5037">
+		<Name>Палкин</Name>
+		<Code>000000006</Code>
+		<Description>Палкин</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6bffc791-9aff-4cb5-ac3e-3aaad29b5eed">
+		<Name>Петров</Name>
+		<Code>000000008</Code>
+		<Description>Петров</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="c182deec-de5e-4684-a357-f33fbc2bfabf">
+		<Name>Рахимов</Name>
+		<Code>000000011</Code>
+		<Description>Рахимов</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a04c879c-f436-45c1-81b8-5d9bab0f6d2a">
+		<Name>Хабибулин</Name>
+		<Code>000000004</Code>
+		<Description>Хабибулин</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Recalculation uuid="fefd07d9-b218-46f2-a8fc-dcca1dd862a1">
+		<InternalInfo>
+			<xr:GeneratedType name="RecalculationRecord.ДополнительныеНачисления.Перерасчет1" category="Record">
+				<xr:TypeId>a54496fd-0c06-4fc9-867d-ab54b3d5c180</xr:TypeId>
+				<xr:ValueId>86e4656b-2df4-4643-a0de-34747a908494</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="RecalculationManager.ДополнительныеНачисления.Перерасчет1" category="Manager">
+				<xr:TypeId>28a567b6-9d48-427f-9dc3-8bd19149bc4f</xr:TypeId>
+				<xr:ValueId>e574a44b-d20d-43d5-97a5-761b7db5669c</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="RecalculationRecordSet.ДополнительныеНачисления.Перерасчет1" category="RecordSet">
+				<xr:TypeId>d22fbe60-f859-4cb0-83a7-6adb49c6b826</xr:TypeId>
+				<xr:ValueId>4a09b657-9ec6-44b4-93c9-fd9f94624b71</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>Перерасчет1</Name>
+			<Synonym/>
+			<Comment/>
+			<DataLockControlMode>Managed</DataLockControlMode>
+		</Properties>
+		<ChildObjects>
+			<Dimension uuid="bf92af32-e0d3-4a36-bfbc-840fdc59175c">
+				<Properties>
+					<Name>Сотрудник</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сотрудник</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<RegisterDimension>CalculationRegister.ДополнительныеНачисления.Dimension.Сотрудник</RegisterDimension>
+					<LeadingRegisterData>
+						<xr:Item xsi:type="xr:MDObjectRef">CalculationRegister.ДополнительныеНачисления.Dimension.Сотрудник</xr:Item>
+					</LeadingRegisterData>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</Recalculation>
+</MetaDataObject>

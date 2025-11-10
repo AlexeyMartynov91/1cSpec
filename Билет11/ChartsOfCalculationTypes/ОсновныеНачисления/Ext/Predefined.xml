@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CalculationTypePredefinedItems" version="2.18">
+	<Item id="329214c6-d02a-4a25-aef3-5b0d86113139">
+		<Name>Невыход</Name>
+		<Code>3</Code>
+		<Description>Невыход</Description>
+		<ActionPeriodIsBase>false</ActionPeriodIsBase>
+	</Item>
+	<Item id="33f54a51-398f-4292-b498-980f3faa0ba1">
+		<Name>Премия</Name>
+		<Code>1</Code>
+		<Description>Премия</Description>
+		<ActionPeriodIsBase>false</ActionPeriodIsBase>
+		<Base>
+			<CalculationType>ChartOfCalculationTypes.ОсновныеНачисления.Тариф</CalculationType>
+		</Base>
+	</Item>
+	<Item id="b02617b5-36b6-457a-bf50-b823d838e11a">
+		<Name>Тариф</Name>
+		<Code>2</Code>
+		<Description>Тариф</Description>
+		<ActionPeriodIsBase>false</ActionPeriodIsBase>
+	</Item>
+</PredefinedData>

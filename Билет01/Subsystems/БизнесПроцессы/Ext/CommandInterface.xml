@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<CommandsVisibility>
+		<Command name="Catalog.Сотрудники.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Подразделения.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Должности.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="InformationRegister.Адресация.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="BusinessProcess.БизнесПроцесс1.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Task.ЗадачиСотрудников.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="Catalog.Сотрудники.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.Подразделения.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.Должности.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="InformationRegister.Адресация.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Регистры</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="BusinessProcess.БизнесПроцесс1.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.БизнесПроцесс</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Task.ЗадачиСотрудников.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.БизнесПроцесс</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="Catalog.Сотрудники.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+		</Command>
+		<Command name="Catalog.Подразделения.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+		</Command>
+		<Command name="Catalog.Должности.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Справочники</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.Адресация.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.Регистры</CommandGroup>
+		</Command>
+		<Command name="BusinessProcess.БизнесПроцесс1.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.БизнесПроцесс</CommandGroup>
+		</Command>
+		<Command name="Task.ЗадачиСотрудников.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.БизнесПроцесс</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>CommandGroup.Справочники</Group>
+		<Group>CommandGroup.Регистры</Group>
+		<Group>CommandGroup.БизнесПроцесс</Group>
+	</GroupsOrder>
+</CommandInterface>

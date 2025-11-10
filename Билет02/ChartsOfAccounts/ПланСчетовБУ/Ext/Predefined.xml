@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ChartOfAccountsPredefinedItems" version="2.18">
+	<Item id="2842c1d0-c43d-4248-bb14-225134b6b701">
+		<Name>ОбщехозяйственныеЗатраты</Name>
+		<Code>ОбщХозЗат</Code>
+		<Description>Общехозяйственные затраты</Description>
+		<AccountType>Active</AccountType>
+		<OffBalance>false</OffBalance>
+		<Order/>
+		<AccountingFlags>
+			<Flag ref="ChartOfAccounts.ПланСчетовБУ.AccountingFlag.Количественный">false</Flag>
+		</AccountingFlags>
+		<ExtDimensionTypes/>
+	</Item>
+	<Item id="a8a74f1d-aaf2-4313-afa0-cbf5ee3ddc9f">
+		<Name>Покупатели</Name>
+		<Code>Покупател</Code>
+		<Description>Покупатели</Description>
+		<AccountType>ActivePassive</AccountType>
+		<OffBalance>false</OffBalance>
+		<Order/>
+		<AccountingFlags>
+			<Flag ref="ChartOfAccounts.ПланСчетовБУ.AccountingFlag.Количественный">false</Flag>
+		</AccountingFlags>
+		<ExtDimensionTypes/>
+	</Item>
+	<Item id="6b6d6ce3-c181-44ea-a6d5-3e50da170cca">
+		<Name>Поставщики</Name>
+		<Code>Поставщ</Code>
+		<Description>Поставщики</Description>
+		<AccountType>ActivePassive</AccountType>
+		<OffBalance>false</OffBalance>
+		<Order/>
+		<AccountingFlags>
+			<Flag ref="ChartOfAccounts.ПланСчетовБУ.AccountingFlag.Количественный">false</Flag>
+		</AccountingFlags>
+		<ExtDimensionTypes/>
+	</Item>
+	<Item id="bcf0695b-8e73-4516-becb-56963fd52570">
+		<Name>ПрибылиИУбытки</Name>
+		<Code>ПрибУбыт</Code>
+		<Description>Прибыли и убытки</Description>
+		<AccountType>Passive</AccountType>
+		<OffBalance>false</OffBalance>
+		<Order/>
+		<AccountingFlags>
+			<Flag ref="ChartOfAccounts.ПланСчетовБУ.AccountingFlag.Количественный">false</Flag>
+		</AccountingFlags>
+		<ExtDimensionTypes>
+			<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконто.Товары">
+				<Turnover>true</Turnover>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts.ПланСчетовБУ.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+				</AccountingFlags>
+			</ExtDimensionType>
+			<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконто.Проекты">
+				<Turnover>true</Turnover>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts.ПланСчетовБУ.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+				</AccountingFlags>
+			</ExtDimensionType>
+		</ExtDimensionTypes>
+	</Item>
+	<Item id="2103de91-c223-430b-88ed-c3f838131f42">
+		<Name>Товары</Name>
+		<Code>Товары</Code>
+		<Description>Товары</Description>
+		<AccountType>Active</AccountType>
+		<OffBalance>false</OffBalance>
+		<Order/>
+		<AccountingFlags>
+			<Flag ref="ChartOfAccounts.ПланСчетовБУ.AccountingFlag.Количественный">true</Flag>
+		</AccountingFlags>
+		<ExtDimensionTypes>
+			<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконто.Товары">
+				<Turnover>false</Turnover>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts.ПланСчетовБУ.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+				</AccountingFlags>
+			</ExtDimensionType>
+			<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконто.Склады">
+				<Turnover>false</Turnover>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts.ПланСчетовБУ.ExtDimensionAccountingFlag.Суммовой">false</Flag>
+				</AccountingFlags>
+			</ExtDimensionType>
+		</ExtDimensionTypes>
+	</Item>
+</PredefinedData>

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Recalculation uuid="b962fa8d-bf91-44cb-aadb-79966c2f8be4">
+		<InternalInfo>
+			<xr:GeneratedType name="RecalculationRecord.ДопНачисления.ПерерасчетПремии" category="Record">
+				<xr:TypeId>09aab776-c4c7-4ffa-a029-f2bde3ee12af</xr:TypeId>
+				<xr:ValueId>d0a06469-1016-493f-a2c9-7c2e5fcd056a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="RecalculationManager.ДопНачисления.ПерерасчетПремии" category="Manager">
+				<xr:TypeId>0fef7482-e3e2-4147-896b-458b0b9d89ec</xr:TypeId>
+				<xr:ValueId>455b25eb-0977-4b8d-a732-1e2e37d07e6e</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="RecalculationRecordSet.ДопНачисления.ПерерасчетПремии" category="RecordSet">
+				<xr:TypeId>680b7fbd-dcad-478b-8e1d-68f9add442a1</xr:TypeId>
+				<xr:ValueId>f012a6f8-8312-410c-a876-6f8eac8753a8</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ПерерасчетПремии</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перерасчет премии</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<DataLockControlMode>Managed</DataLockControlMode>
+		</Properties>
+		<ChildObjects>
+			<Dimension uuid="6dce2dba-4a1e-47c6-84c6-d9455c9ed195">
+				<Properties>
+					<Name>Подразделение</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подразделение</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<RegisterDimension>CalculationRegister.ДопНачисления.Dimension.Подразделение</RegisterDimension>
+					<LeadingRegisterData>
+						<xr:Item xsi:type="xr:MDObjectRef">CalculationRegister.НачисленияСотрудникам.Dimension.Подразделение</xr:Item>
+					</LeadingRegisterData>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</Recalculation>
+</MetaDataObject>

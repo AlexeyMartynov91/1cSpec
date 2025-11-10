@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<Recalculation uuid="6395125a-c1e5-4584-aaea-9f03df9be66b">
+		<InternalInfo>
+			<xr:GeneratedType name="RecalculationRecord.ДопНачисления.ПерерасчетЗарплаты" category="Record">
+				<xr:TypeId>0c009bf7-bb1d-49ae-a47f-fccc09d4ac49</xr:TypeId>
+				<xr:ValueId>f6ddf04b-3cec-44dc-8300-b9b66f848db3</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="RecalculationManager.ДопНачисления.ПерерасчетЗарплаты" category="Manager">
+				<xr:TypeId>c5d7e57e-904e-4a39-b97d-5930174c1808</xr:TypeId>
+				<xr:ValueId>bff0d7cf-94c9-41b8-a651-80b2857bf297</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="RecalculationRecordSet.ДопНачисления.ПерерасчетЗарплаты" category="RecordSet">
+				<xr:TypeId>dbd8ca01-ac4a-44a5-95a4-75ff2f836dc9</xr:TypeId>
+				<xr:ValueId>d39103ef-cf10-419d-81a7-f0b5f3851d3f</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ПерерасчетЗарплаты</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перерасчет зарплаты</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<DataLockControlMode>Managed</DataLockControlMode>
+		</Properties>
+		<ChildObjects>
+			<Dimension uuid="08fa37d1-15e2-4552-926d-a659f8b30e5b">
+				<Properties>
+					<Name>Сотрудник</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сотрудник</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<RegisterDimension>CalculationRegister.ДопНачисления.Dimension.Сотрудник</RegisterDimension>
+					<LeadingRegisterData>
+						<xr:Item xsi:type="xr:MDObjectRef">CalculationRegister.ОсновныеНачисления.Dimension.Сотрудник</xr:Item>
+					</LeadingRegisterData>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="8720af4a-29f7-464f-bbd0-b7c802ecbd44">
+				<Properties>
+					<Name>Подразделение</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подразделение</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<RegisterDimension>CalculationRegister.ДопНачисления.Dimension.Подразделение</RegisterDimension>
+					<LeadingRegisterData>
+						<xr:Item xsi:type="xr:MDObjectRef">CalculationRegister.ОсновныеНачисления.Dimension.Подразделение</xr:Item>
+					</LeadingRegisterData>
+				</Properties>
+			</Dimension>
+		</ChildObjects>
+	</Recalculation>
+</MetaDataObject>

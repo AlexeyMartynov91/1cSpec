@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.18">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Подразделение" id="7">
+			<DataPath>Объект.Подразделение</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ПодразделениеКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Период" id="35">
+			<DataPath>Период</DataPath>
+			<ContextMenu name="ПериодКонтекстноеМеню" id="36"/>
+			<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="37"/>
+			<Events>
+				<Event name="OnChange">ПериодПриИзменении</Event>
+			</Events>
+		</InputField>
+		<Table name="СписокСтатейЗатрат" id="10">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.СписокСтатейЗатрат</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СписокСтатейЗатратКонтекстноеМеню" id="11"/>
+			<AutoCommandBar name="СписокСтатейЗатратКоманднаяПанель" id="12"/>
+			<ExtendedTooltip name="СписокСтатейЗатратРасширеннаяПодсказка" id="13"/>
+			<SearchStringAddition name="СписокСтатейЗатратСтрокаПоиска" id="14">
+				<AdditionSource>
+					<Item>СписокСтатейЗатрат</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтатейЗатратСтрокаПоискаКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="СписокСтатейЗатратСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСтатейЗатратСостояниеПросмотра" id="17">
+				<AdditionSource>
+					<Item>СписокСтатейЗатрат</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтатейЗатратСостояниеПросмотраКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="СписокСтатейЗатратСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокСтатейЗатратУправлениеПоиском" id="20">
+				<AdditionSource>
+					<Item>СписокСтатейЗатрат</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтатейЗатратУправлениеПоискомКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="СписокСтатейЗатратУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="СписокСтатейЗатратНомерСтроки" id="23">
+					<DataPath>Объект.СписокСтатейЗатрат.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСтатейЗатратНомерСтрокиКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="СписокСтатейЗатратНомерСтрокиРасширеннаяПодсказка" id="25"/>
+				</LabelField>
+				<InputField name="СписокСтатейЗатратСтатьяЗатрат" id="26">
+					<DataPath>Объект.СписокСтатейЗатрат.СтатьяЗатрат</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСтатейЗатратСтатьяЗатратКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="СписокСтатейЗатратСтатьяЗатратРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="СписокСтатейЗатратСумма" id="29">
+					<DataPath>Объект.СписокСтатейЗатрат.Сумма</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСтатейЗатратСуммаКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="СписокСтатейЗатратСуммаРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="СписокСтатейЗатратВозможноеПревышение" id="32">
+					<DataPath>Объект.СписокСтатейЗатрат.ВозможноеПревышение</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СписокСтатейЗатратВозможноеПревышениеКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="СписокСтатейЗатратВозможноеПревышениеРасширеннаяПодсказка" id="34"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.Бюджет</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="Период" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+	</Attributes>
+</Form>
